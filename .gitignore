@@ -1,0 +1,61 @@
+MDK/Objects/
+MDK/Listings/
+MDK/bin/
+MDK/DebugConfig/
+MDK/STMF4.uvguix.Administrator
+MDK/STMF4.uvoptx
+MDK/bin/
+MDK/JLinkLog.txt
+pro/
+source\ insight/
+BAK/
+
+*.lst
+*.map
+*.crf
+*.d
+*.o
+*.obj
+*.htm
+*.axf
+
+# Prerequisites
+*.d
+
+# Compiled Object files
+*.slo
+*.lo
+*.o
+*.obj
+
+# Precompiled Headers
+*.gch
+*.pch
+
+# Compiled Dynamic libraries
+*.so
+*.dylib
+*.dll
+
+# Fortran module files
+*.mod
+*.smod
+
+# Compiled Static libraries
+*.lai
+*.la
+*.a
+*.lib
+
+# Executables
+*.exe
+*.out
+*.app
+
+#for visual studio
+Algorithms_lib/Debug/
+Algorithms_lib/Algorithms_lib/Debug/
+
+
+
+
