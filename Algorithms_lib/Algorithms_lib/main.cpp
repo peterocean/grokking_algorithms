@@ -6,6 +6,8 @@
 using namespace std;
 
 #define BINARY_SEARCH_ARRAY_SIZE (100u)
+#define SELECTION_SORT_ARRAY_SIZE (20u)
+
 void create_binary_search_int_array(int32_t array[], int32_t size)
 {
 	int32_t index = 0;
@@ -23,6 +25,17 @@ void create_binary_search_int_array(int32_t array[], int32_t size)
 	}
 }
 
+void create_selection_sort_test_array(int32_t array[], int32_t size)
+{
+	int32_t index = 0;
+
+	for (index = 0; index < size; index++)
+	{
+		array[index] = rand() % 1000;
+	}
+}
+
+
 void print_binary_search_int_array(int32_t array[], int32_t size)
 {
 	int32_t index = 0;
@@ -32,7 +45,7 @@ void print_binary_search_int_array(int32_t array[], int32_t size)
 	{
 		temp = array[index];
 		std::cout<<left << setw(5) << temp << ",";
-		if ((index + 1) % 5 == 0 && index != 0)
+		if ((index + 1) % 10 == 0 && index != 0)
 			std::cout << endl;
 	}
 }
@@ -100,9 +113,25 @@ static void binary_search_temple_test(void)
 	free(array);
 }
 
+void selectionSortUnitTest(void)
+{
+	int32_t pos = 0;
+	int32_t key = 0;
+	int32_t *array = (int32_t*)malloc(SELECTION_SORT_ARRAY_SIZE * sizeof(int32_t));
 
+	create_selection_sort_test_array(array, SELECTION_SORT_ARRAY_SIZE);
+	std::cout << "Before selection sort,Init array:" << endl;
+
+	print_binary_search_int_array(array, SELECTION_SORT_ARRAY_SIZE);
+	SelectionSort(array, SELECTION_SORT_ARRAY_SIZE);
+
+	std::cout << "After selection sort, array: " << endl;
+	print_binary_search_int_array(array, SELECTION_SORT_ARRAY_SIZE);
+	free(array);
+}
 int main()
 {
-	binary_search_int_test();
-	binary_search_temple_test();
+	//binary_search_int_test();
+	//binary_search_temple_test();
+	selectionSortUnitTest();
 }

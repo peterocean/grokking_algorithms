@@ -116,11 +116,13 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="Algorithms_lib\binary_search.c" />
+    <ClCompile Include="Algorithms_lib\SelectionSort.c" />
     <ClCompile Include="main.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="algorithms_lib.h" />
     <ClInclude Include="Algorithms_lib\binary_search.h" />
+    <ClInclude Include="Algorithms_lib\SelectionSort.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

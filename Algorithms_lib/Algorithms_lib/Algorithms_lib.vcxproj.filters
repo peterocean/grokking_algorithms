@@ -21,12 +21,18 @@
     <ClCompile Include="Algorithms_lib\binary_search.c">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="Algorithms_lib\SelectionSort.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Algorithms_lib\binary_search.h">
       <Filter>头文件</Filter>
     </ClInclude>
     <ClInclude Include="algorithms_lib.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Algorithms_lib\SelectionSort.h">
       <Filter>头文件</Filter>
     </ClInclude>
   </ItemGroup>
